@@ -4,17 +4,18 @@
     font-family: "HM Sans Regular";
     
 }
-#screen{
+#screennav{
     /* border: 1px solid red; */
     height: 100%;
     width: 100%;
+    
 }
 #bg{
     background-color: #faf9f8;
 }
 #nav{
     width: 99.9%;
-    height: 150px;
+    height: 170px;
      border: 1px solid #faf9f8;
 }
 #nav1{
@@ -108,7 +109,7 @@
     /* border: 1px solid red; */
     margin-top: 42px;
     height: 30px;
-    width: 72%;
+    width: 75%;
     margin-left: 25.4%;
     display: flex;
 
@@ -121,7 +122,8 @@
     list-style: none;
     /* border: 1px solid red; */
     margin-left: -40px;
-    margin-top: 3px;
+    margin-top: 0px;
+    height: 30px;
     font-family: "HM Sans Regular";
     font-size: 16px;
     
@@ -135,12 +137,14 @@
     height: 30px;
     margin-left: 140px;
     margin-top: -5px;
+    background-color: #faf9f8;
 }
 #line{
     border: 1px solid black;
     width: 200px;
     /* margin-top: -10px; */
     margin-left: 00px;
+    background-color: #faf9f8;
 }
 #linein{
     border: none;
@@ -149,6 +153,7 @@
     margin-top: -20px;
     font-size: 16px;
     width: 150px;
+    color: #faf9f8;
 
     
    

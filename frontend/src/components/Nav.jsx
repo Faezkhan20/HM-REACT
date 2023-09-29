@@ -3,7 +3,7 @@ import "./nav.css"
 
 const Nav = () => {
   return (
-    <div id='screen'>
+    <div id='screennav'>
       <div id='bg'>
         <div id='nav'>
           <div id='nav1'>
