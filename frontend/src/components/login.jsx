@@ -3,7 +3,8 @@ import { useNavigate } from 'react-router-dom';
 
 const Login = () => {
 
-    const rout = useNavigate();
+    const router = useNavigate();
+
     return (
         <div id='screen'>
             <div id='body' >
@@ -30,7 +31,7 @@ const Login = () => {
                     </div>
 
                     <button className='sign-in' >Sign in</button><br/>
-                    <button className='sign-up' onClick={() => rout("/register")} >Become a member</button>
+                    <button className='sign-up' onClick={() => router("/signup")} >Become a member</button>
                     <p className='last'><u>Membership info</u></p>
                 </div>
             </div>

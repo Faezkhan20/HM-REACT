@@ -8,6 +8,7 @@ import Nav from './components/Nav';
 import Mens from './components/Mens';
 import Footer from './components/Footer';
 import Login from './components/Login';
+import SingleProduct from './components/SingleProduct';
 
 
 
@@ -22,6 +23,7 @@ function App() {
      <Route path='/mens' element={<Mens />} />
      <Route path='/footer' element={<Footer/>} />
      <Route path='/login' element={<Login/>} />
+     <Route exact path='/singleproduct' element={<SingleProduct/>} />
      </Routes>
      <Footer/>
     </div>

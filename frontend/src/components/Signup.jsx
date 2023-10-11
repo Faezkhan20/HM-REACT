@@ -4,7 +4,7 @@ import "./Signup.css"
 
 const Signup = () => {
     return (
-        <div id='screen'>
+        <div id='screensignup'>
             <div id='mainscreen'>
                 <div id='inscreen'>
                     <div id='firstline'>

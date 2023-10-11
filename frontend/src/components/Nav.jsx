@@ -1,7 +1,9 @@
 import React from 'react'
 import "./nav.css"
+import { useNavigate } from 'react-router-dom';
 
 const Nav = () => {
+  const router = useNavigate();
   return (
     <div id='screennav'>
       <div id='bg'>
@@ -17,10 +19,10 @@ const Nav = () => {
 
               </ul>
             </div>
-            <div id='logo'><img id='logoimg' src="https://assets.stickpng.com/images/585990604f6ae202fedf28d3.png" alt="" /></div>
+            <div onClick={() => router("/")} id='logo'><img id='logoimg' src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/H%26M-Logo.svg/640px-H%26M-Logo.svg.png" alt="" /></div>
             <div id='nav1div2'>
               <div id='buttonnav'>
-                <button id='signinb'> <i id='id1' class="fa-regular fa-user fa-xl"></i>Sign in</button>
+                <button  onClick={() => router("/login")} id='signinb'> <i id='id1' class="fa-regular fa-user fa-xl"></i>Sign in</button>
                 <button id='fav'><i id='id1' class="fa-regular fa-heart fa-xl"></i> Favourties</button>
                 <button id='bag'><i id='id1' class="fa-solid fa-bag-shopping fa-xl"></i> Shopping bag (0)</button>
               </div>
