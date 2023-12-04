@@ -34,7 +34,7 @@ const Nav = () => {
             <div id='cat'>
                <ul id='catul'>
                 <li>Ladies</li>
-                <li>Men</li>
+                <li onClick={() => router("/mens")}>Men</li>
                 <li>Divided</li>
                 <li>Baby</li>
                 <li>Kids</li>
