@@ -1,9 +1,12 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import "./nav.css"
 import { useNavigate } from 'react-router-dom';
+import { AuthContext } from '../Context/Authcontext';
 
 const Nav = () => {
   const router = useNavigate();
+  
+  const { state, Logout } = useContext(AuthContext)
   return (
     <div id='screennav'>
       <div id='bg'>
@@ -19,12 +22,24 @@ const Nav = () => {
 
               </ul>
             </div>
+            
             <div onClick={() => router("/")} id='logo'><img id='logoimg' src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/H%26M-Logo.svg/640px-H%26M-Logo.svg.png" alt="" /></div>
             <div id='nav1div2'>
               <div id='buttonnav'>
-                <button  onClick={() => router("/login")} id='signinb'> <i id='id1' class="fa-regular fa-user fa-xl"></i>Sign in</button>
+              {state?.user?.id ?
+              <>
+              
+                <button  onClick={Logout} id='signinb'> <h4 id='nameh4'>{state.user.name}</h4> <i id='userr' class="fa-regular fa-user fa-xl"></i>logout</button>
                 <button id='fav'><i id='id1' class="fa-regular fa-heart fa-xl"></i> Favourties</button>
                 <button id='bag'><i id='id1' class="fa-solid fa-bag-shopping fa-xl"></i> Shopping bag (0)</button>
+                </>
+                :
+                <>
+                <button id='signinb'onClick={() => router("/login")}>Signin</button>
+                <button id='fav'><i id='id1' class="fa-regular fa-heart fa-xl"></i> Favourties</button>
+                <button id='bag'><i id='id1' class="fa-solid fa-bag-shopping fa-xl"></i> Shopping bag (0)</button>
+                </>
+                }
               </div>
             </div>
 

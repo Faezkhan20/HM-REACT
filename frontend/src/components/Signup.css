@@ -124,11 +124,13 @@ margin-left: 94%;
 }
 #dob{
     color: black;
-    margin-top: -15px;
+    margin-top: -10px;
     width: fit-content;
     height: fit-content;
     font-size: 13px;
-    margin-left: -7px;
+    margin-left: -22px;
+    
+
     
 }
 #star3{
